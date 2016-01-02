@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Xeon | OnePage Responsive Theme</title>
+    <title>Auto école Roule Raoul</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -36,12 +36,11 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#about-us">About Us</a></li>
+                        <li class="active"><a href="#main-slider"><i class="fa fa-home"></i></a></li>
+                        <li><a href="#services">L'auto-école</a></li>
+                        <li><a href="#pricing">Nos offres</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Espace Client</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,68 +52,79 @@
             <div class="item active">
                 <div class="container">
                     <div class="carousel-content">
-                        <h1>Free Onepage Theme</h1>
-                        <p class="lead">Xeon is the best free onepage responsive theme available arround the globe<br>Download it right now for free</p>
+                        <h1>Il nous recommande!</h1>
+                        <p class="lead">Déjà souligner par de nombreux média tel que le Figaro et le Parisiens pour nos quatités des services. Nous vous proposons aujourd'hui une interface complete en ligne de prise de rendez-vous pour vous inscrire et reserver vos future lecon.</p>
                     </div>
                 </div>
             </div><!--/.item-->
             <div class="item">
                 <div class="container">
                     <div class="carousel-content">
-                        <h1>ShapeBootstrap.net</h1>
-                        <p class="lead">Download free but 100% premium quaility twitter Bootstrap based WordPress and HTML themes <br>from shapebootstrap.net</p>
+                        <h1>Des offres adapter à vos besoins.</h1>
+                        <p class="lead">Decouvrez nos offres flexible en fonction de vos besoins, vous serez encadré par nos moniteurs expérimentés de nombreuses années d'expériences.</p>
                     </div>
                 </div>
             </div><!--/.item-->
         </div><!--/.carousel-inner-->
-        <a class="prev" href="#main-slider" data-slide="prev"><i class="icon-angle-left"></i></a>
-        <a class="next" href="#main-slider" data-slide="next"><i class="icon-angle-right"></i></a>
+        <a class="prev" href="#main-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+        <a class="next" href="#main-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
     </section><!--/#main-slider-->
+
+    <section id="about-us">
+        <div class="container">
+            <div class="box first">
+                <div class="center">
+                    <h2>Qui somme nous ?</h2>
+                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div>
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#about-us-->
 
     <section id="services">
         <div class="container">
-            <div class="box first">
+            <div class="box">
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
-                            <i class="icon-apple icon-md icon-color1"></i>
-                            <h4>iOS development</h4>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                            <i class="fa fa-cloud icon-md icon-color1"></i>
+                            <h4>Des installations modernes</h4>
+                            <p>Apprenez à conduire avec du materiel de qualité et moderne. Possibilité de réservation de cours en ligne.</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
-                            <i class="icon-android icon-md icon-color2"></i>
-                            <h4>Android development</h4>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                            <i class="fa fa-thumbs-up icon-md icon-color2"></i>
+                            <h4>Un suivi pédagogique de qualité</h4>
+                            <p>Nos moniteur sont à votre écoute. Il saurrons vous encadré grâce à leur nombreuses années d'expériences.</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
-                            <i class="icon-windows icon-md icon-color3"></i>
-                            <h4>Windows Phone development</h4>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                            <i class="fa fa-angle-double-right icon-md icon-color3"></i>
+                            <h4>Avancez a votre rythme</h4>
+                            <p>Nous n'avons pas tous les mêmes capacitées à apprendre, c'est pourquoi toute nos offres vous propose des heures de perfectionnements en supplément sur demande.</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
-                            <i class="icon-html5 icon-md icon-color4"></i>
-                            <h4>Ruby on Rails development</h4>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                            <i class="fa fa-car icon-md icon-color4"></i>
+                            <h4>Les cours quand vous voulez, où vous voulez</h4>
+                            <p>Quite à roulez autant vous emmener! En supperpossant les différentes leçon nous vennons vous cherchez jusque devant votre domicile et vous racompagnons chez vous après. Utile pour ne pas attendre 1 heure dans une permanance ton prochain bus!</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
-                            <i class="icon-css3 icon-md icon-color5"></i>
+                            <i class="fa fa-css3 icon-md icon-color5"></i>
                             <h4>Javascript development</h4>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
-                            <i class="icon-thumbs-up icon-md icon-color6"></i>
-                            <h4>Responsive web design</h4>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                            <i class="fa fa-hashtag icon-md icon-color6"></i>
+                            <h4>Une auto-école dans l'êre du temps</h4>
+                            <p>Retrouvez nous aussi sur les réseaux sociaux.</p>
                         </div>
                     </div><!--/.col-md-4-->
                 </div><!--/.row-->
@@ -122,247 +132,73 @@
         </div><!--/.container-->
     </section><!--/#services-->
 
-    <section id="portfolio">
-        <div class="container">
-            <div class="box">
-                <div class="center gap">
-                    <h2>Portfolio</h2>
-                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac<br>turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-                </div><!--/.center-->
-                <ul class="portfolio-filter">
-                    <li><a class="btn btn-primary active" href="#" data-filter="*">All</a></li>
-                    <li><a class="btn btn-primary" href="#" data-filter=".bootstrap">Bootstrap</a></li>
-                    <li><a class="btn btn-primary" href="#" data-filter=".html">HTML</a></li>
-                    <li><a class="btn btn-primary" href="#" data-filter=".wordpress">Wordpress</a></li>
-                </ul><!--/#portfolio-filter-->
-                <ul class="portfolio-items col-4">
-                    <li class="portfolio-item apps">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="images/portfolio/thumb/item1.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item1.jpg"><i class="icon-eye-open"></i></a>             
-                                </div>
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>
-                        </div>
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item joomla bootstrap">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="images/portfolio/thumb/item2.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item2.jpg"><i class="icon-eye-open"></i></a>  
-                                </div>
-                            </div> 
-                            <h5>Lorem ipsum dolor sit amet</h5>         
-                        </div>
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item bootstrap wordpress">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="images/portfolio/thumb/item3.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item3.jpg"><i class="icon-eye-open"></i></a>        
-                                </div> 
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>          
-                        </div>           
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item joomla wordpress apps">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="images/portfolio/thumb/item4.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item4.jpg"><i class="icon-eye-open"></i></a>          
-                                </div>   
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>        
-                        </div>           
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item joomla html">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="images/portfolio/thumb/item5.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item5.jpg"><i class="icon-eye-open"></i></a>          
-                                </div>  
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>  
-                        </div>       
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item wordpress html">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="images/portfolio/thumb/item6.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item6.jpg"><i class="icon-eye-open"></i></a>           
-                                </div>  
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>         
-                        </div>           
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item joomla html">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="images/portfolio/thumb/item5.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item5.jpg"><i class="icon-eye-open"></i></a>          
-                                </div>  
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>  
-                        </div>       
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item wordpress html">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="images/portfolio/thumb/item6.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item6.jpg"><i class="icon-eye-open"></i></a>           
-                                </div>   
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>        
-                        </div>         
-                    </li><!--/.portfolio-item-->
-                </ul>   
-            </div><!--/.box-->
-        </div><!--/.container-->
-    </section><!--/#portfolio-->
-
     <section id="pricing">
         <div class="container">
             <div class="box">
                 <div class="center">
-                    <h2>See our Pricings</h2>
-                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et <br>malesuada fames ac turpis egestas.</p>
+                    <h2>Nos offres</h2>
+                    <p class="lead">Toute nos offres sont flexible et modulable à votre guise.</p>
                 </div><!--/.center-->   
                 <div class="big-gap"></div>
                 <div id="pricing-table" class="row">
                     <div class="col-sm-4">
                         <ul class="plan">
-                            <li class="plan-name">Basic</li>
-                            <li class="plan-price">$29</li>
-                            <li>5GB Storage</li>
-                            <li>1GB RAM</li>
-                            <li>400GB Bandwidth</li>
-                            <li>10 Email Address</li>
-                            <li>Forum Support</li>
+                            <li class="plan-name">Code de la route</li>
+                            <li class="plan-price">300€ TTC</li>
+                            <li>10 heures de cours</li>
+                            <li>Suivi de progression</li>
+                            <li>Présentation à l'examen du code de la route</li>
                             <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
                         </ul>
                     </div><!--/.col-sm-4-->
                     <div class="col-sm-4">
                         <ul class="plan featured">
-                            <li class="plan-name">Standard</li>
-                            <li class="plan-price">$49</li>
-                            <li>10GB Storage</li>
-                            <li>2GB RAM</li>
-                            <li>1TB Bandwidth</li>
-                            <li>100 Email Address</li>
-                            <li>Forum Support</li>
+                            <li class="plan-name">Permit auto</li>
+                            <li class="plan-price">1200€ TTC</li>
+                            <li>20 heures de conduites</li>
+                            <li>35€ l'heure supplémentaire</li>
+                            <li>Possibilité de passage de l'ETG (non conducteur ou conducteur de + de 5 ans)*</li>
+                            <li>Un suivi pédagogique personnalisé</li>
                             <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
                         </ul>
                     </div><!--/.col-sm-4-->
                     <div class="col-sm-4">
                         <ul class="plan">
-                            <li class="plan-name">Advanced</li>
-                            <li class="plan-price">$199</li>
-                            <li>30GB Storage</li>
-                            <li>5GB RAM</li>
-                            <li>5TB Bandwidth</li>
-                            <li>1000 Email Address</li>
-                            <li>Forum Support</li>
+                            <li class="plan-name">Permit moto</li>
+                            <li class="plan-price">700€ TTC</li>
+                            <li>20 heures de conduites</li>
+                            <li>40€ l'heure supplémentaire</li>
+                            <li>Possibilité de passage de l'ETG (non conducteur ou conducteur de + de 5 ans)*</li>
+                            <li>Un suivi pédagogique personnalisé</li>
                             <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
                         </ul>
                     </div><!--/.col-sm-4-->
+                    <div class="center">
+                        <p>* : le code de la route fait office d'ETG.</p>
+                    </div><!--/.center-->
                 </div> 
             </div> 
         </div>
     </section><!--/#pricing-->
-
-    <section id="about-us">
-        <div class="container">
-            <div class="box">
-                <div class="center">
-                    <h2>Meet the Team</h2>
-                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et<br>malesuada fames ac turpis egestas.</p>
-                </div>
-                <div class="gap"></div>
-                <div id="team-scroller" class="carousel scale">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt="" ></p>
-                                        <h3>Agnes Smith<small class="designation">CEO &amp; Founder</small></h3>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team2.jpg" alt="" ></p>
-                                        <h3>Donald Ford<small class="designation">Senior Vice President</small></h3>
-                                    </div>
-                                </div>        
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team3.jpg" alt="" ></p>
-                                        <h3>Karen Richardson<small class="designation">Assitant Vice President</small></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team3.jpg" alt="" ></p>
-                                        <h3>David Robbins<small class="designation">Co-Founder</small></h3>
-                                    </div>
-                                </div>   
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt="" ></p>
-                                        <h3>Philip Mejia<small class="designation">Marketing Manager</small></h3>
-                                    </div>
-                                </div>     
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team2.jpg" alt="" ></p>
-                                        <h3>Charles Erickson<small class="designation">Support Manager</small></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="left-arrow" href="#team-scroller" data-slide="prev">
-                        <i class="icon-angle-left icon-4x"></i>
-                    </a>
-                    <a class="right-arrow" href="#team-scroller" data-slide="next">
-                        <i class="icon-angle-right icon-4x"></i>
-                    </a>
-                </div><!--/.carousel-->
-            </div><!--/.box-->
-        </div><!--/.container-->
-    </section><!--/#about-us-->
 
     <section id="contact">
         <div class="container">
             <div class="box last">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Contact Form</h1>
+                        <h1>Contactez nous</h1>
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                         <div class="status alert alert-success" style="display: none"></div>
                         <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Name">
+                                        <input type="text" class="form-control" required="required" placeholder="Nom">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Email address">
+                                        <input type="text" class="form-control" required="required" placeholder="Adresse Email">
                                     </div>
                                 </div>
                             </div>
@@ -372,46 +208,38 @@
                                         <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
+                                        <button type="submit" class="btn btn-danger btn-lg">Envoyer</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div><!--/.col-sm-6-->
                     <div class="col-sm-6">
-                        <h1>Our Address</h1>
+                        <h1>Nos coordonnées</h1>
                         <div class="row">
                             <div class="col-md-6">
                                 <address>
-                                    <strong>Twitter, Inc.</strong><br>
-                                    795 Folsom Ave, Suite 600<br>
-                                    San Francisco, CA 94107<br>
-                                    <abbr title="Phone">P:</abbr> (123) 456-7890
-                                </address>
-                            </div>
-                            <div class="col-md-6">
-                                <address>
-                                    <strong>Twitter, Inc.</strong><br>
-                                    795 Folsom Ave, Suite 600<br>
-                                    San Francisco, CA 94107<br>
-                                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                                    <strong>Auto-école Roule Raoul.</strong><br>
+                                    115 Rue du théâtre,<br>
+                                    Paris, 75015<br>
+                                    <abbr title="Telephone">Tel:</abbr> <abbr title="Numéro internationnal +33">0</abbr>1 23 45 67 89
                                 </address>
                             </div>
                         </div>
-                        <h1>Connect with us</h1>
+                        <h1>Nos réseaux sociaux</h1>
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="social">
-                                    <li><a href="#"><i class="icon-facebook icon-social"></i> Facebook</a></li>
-                                    <li><a href="#"><i class="icon-google-plus icon-social"></i> Google Plus</a></li>
-                                    <li><a href="#"><i class="icon-pinterest icon-social"></i> Pinterest</a></li>
+                                    <li><a href="#"><i class="fa fa-facebook icon-facebook icon-social"></i> Facebook</a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus icon-google-plus icon-social"></i> Google Plus</a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest icon-pinterest icon-social"></i> Pinterest</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
                                 <ul class="social">
-                                    <li><a href="#"><i class="icon-linkedin icon-social"></i> Linkedin</a></li>
-                                    <li><a href="#"><i class="icon-twitter icon-social"></i> Twitter</a></li>
-                                    <li><a href="#"><i class="icon-youtube icon-social"></i> Youtube</a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin icon-linkedin icon-social"></i> Linkedin</a></li>
+                                    <li><a href="#"><i class="fa fa-twitter icon-twitter icon-social"></i> Twitter</a></li>
+                                    <li><a href="#"><i class="fa fa-youtube icon-youtube icon-social"></i> Youtube</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -425,10 +253,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
-                </div>
-                <div class="col-sm-6">
-                    <img class="pull-right" src="images/shapebootstrap.png" alt="ShapeBootstrap" title="ShapeBootstrap">
+                    &copy; 2016 <a target="_blank" href="#" title="Free Twitter Bootstrap WordPress Themes and HTML templates">Joffray Billon</a>. All Rights Reserved.
                 </div>
             </div>
         </div>
