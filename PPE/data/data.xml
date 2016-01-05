@@ -4,9 +4,22 @@
  <value>
   <struct>
    <member>
-    <name>cc</name>
+    <name>coucou</name>
     <value>
-     <string>coucou</string>
+     <struct>
+      <member>
+       <name>content1</name>
+       <value>
+        <string>Bjr</string>
+       </value>
+      </member>
+      <member>
+       <name>content2</name>
+       <value>
+        <string>bonjour</string>
+       </value>
+      </member>
+     </struct>
     </value>
    </member>
   </struct>
