@@ -52,16 +52,16 @@
             <div class="item active">
                 <div class="container">
                     <div class="carousel-content">
-                        <h1>Il nous recommande!</h1>
-                        <p class="lead">Déjà souligner par de nombreux média tel que le Figaro et le Parisiens pour nos quatités des services. Nous vous proposons aujourd'hui une interface complete en ligne de prise de rendez-vous pour vous inscrire et reserver vos future lecon.</p>
+                        <h1>Ils nous recommandent!</h1>
+                        <p class="lead">Déjà souligné par de nombreux médias tels que le Figaro et le Parisiens pour notre qualité de services. Nous vous proposons aujourd'hui une interface complète en ligne de prise de rendez-vous pour vous inscrire et réserver vos futures leçons.</p>
                     </div>
                 </div>
             </div><!--/.item-->
             <div class="item">
                 <div class="container">
                     <div class="carousel-content">
-                        <h1>Des offres adapter à vos besoins.</h1>
-                        <p class="lead">Decouvrez nos offres flexible en fonction de vos besoins, vous serez encadré par nos moniteurs expérimentés de nombreuses années d'expériences.</p>
+                        <h1>Des offres adaptées à vos besoins.</h1>
+                        <p class="lead">Découvrez nos offres flexibles en fonction de vos besoins, vous serez encadré par nos moniteurs expérimentés ayant de nombreuses années d'expériences.</p>
                     </div>
                 </div>
             </div><!--/.item-->
@@ -74,7 +74,7 @@
         <div class="container">
             <div class="box first">
                 <div class="center">
-                    <h2>Qui somme nous ?</h2>
+                    <h2>Qui sommes nous ?</h2>
                     <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                 </div>
             </div><!--/.box-->
@@ -89,28 +89,28 @@
                         <div class="center">
                             <i class="fa fa-cloud icon-md icon-color1"></i>
                             <h4>Des installations modernes</h4>
-                            <p>Apprenez à conduire avec du materiel de qualité et moderne. Possibilité de réservation de cours en ligne.</p>
+                            <p>Apprenez à conduire avec du matériel de qualité et moderne. Possibilité de réservation de cours en ligne.</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
                             <i class="fa fa-thumbs-up icon-md icon-color2"></i>
                             <h4>Un suivi pédagogique de qualité</h4>
-                            <p>Nos moniteur sont à votre écoute. Il saurrons vous encadré grâce à leur nombreuses années d'expériences.</p>
+                            <p>Nos moniteurs sont à votre écoute. Ils sauront vous encadrer grâce à leurs nombreuses années d'expériences.</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
                             <i class="fa fa-angle-double-right icon-md icon-color3"></i>
-                            <h4>Avancez a votre rythme</h4>
-                            <p>Nous n'avons pas tous les mêmes capacitées à apprendre, c'est pourquoi toute nos offres vous propose des heures de perfectionnements en supplément sur demande.</p>
+                            <h4>Avancez à votre rythme</h4>
+                            <p>Nous n'avons pas tous les mêmes capacités à apprendre, c'est pourquoi toutes nos offres vous proposent des heures de perfectionnements en supplément sur demande.</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
                             <i class="fa fa-car icon-md icon-color4"></i>
                             <h4>Les cours quand vous voulez, où vous voulez</h4>
-                            <p>Quite à roulez autant vous emmener! En supperpossant les différentes leçon nous vennons vous cherchez jusque devant votre domicile et vous racompagnons chez vous après. Utile pour ne pas attendre 1 heure dans une permanance ton prochain bus!</p>
+                            <p>Quite à roulez autant vous emmener! En superposant les différentes leçons nous venons vous cherchez jusque devant votre domicile et vous racompagnons chez vous après. Utile pour ne pas attendre 1 heure dans une permanance votre prochain bus!</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
@@ -123,7 +123,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
                             <i class="fa fa-hashtag icon-md icon-color6"></i>
-                            <h4>Une auto-école dans l'êre du temps</h4>
+                            <h4>Une auto-école dans l'ère du temps</h4>
                             <p>Retrouvez nous aussi sur les réseaux sociaux.</p>
                         </div>
                     </div><!--/.col-md-4-->
@@ -137,7 +137,7 @@
             <div class="box">
                 <div class="center">
                     <h2>Nos offres</h2>
-                    <p class="lead">Toute nos offres sont flexible et modulable à votre guise.</p>
+                    <p class="lead">Toutes nos offres sont flexibles et modulables à votre guise.</p>
                 </div><!--/.center-->   
                 <div class="big-gap"></div>
                 <div id="pricing-table" class="row">
@@ -148,29 +148,41 @@
                             <li>10 heures de cours</li>
                             <li>Suivi de progression</li>
                             <li>Présentation à l'examen du code de la route</li>
+<<<<<<< HEAD
                             <li class="plan-action"><a href="espace-perso.php#content" class="btn btn-primary btn-lg">Signup</a></li>
+=======
+                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Sign up</a></li>
+>>>>>>> origin/master
                         </ul>
                     </div><!--/.col-sm-4-->
                     <div class="col-sm-4">
                         <ul class="plan featured">
-                            <li class="plan-name">Permit auto</li>
+                            <li class="plan-name">Permis auto</li>
                             <li class="plan-price">1200€ TTC</li>
                             <li>20 heures de conduites</li>
                             <li>35€ l'heure supplémentaire</li>
                             <li>Possibilité de passage de l'ETG (non conducteur ou conducteur de + de 5 ans)*</li>
                             <li>Un suivi pédagogique personnalisé</li>
+<<<<<<< HEAD
                             <li class="plan-action"><a href="espace-perso.php#content" class="btn btn-primary btn-lg">Signup</a></li>
+=======
+                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Sign up</a></li>
+>>>>>>> origin/master
                         </ul>
                     </div><!--/.col-sm-4-->
                     <div class="col-sm-4">
                         <ul class="plan">
-                            <li class="plan-name">Permit moto</li>
+                            <li class="plan-name">Permis moto</li>
                             <li class="plan-price">700€ TTC</li>
                             <li>20 heures de conduites</li>
                             <li>40€ l'heure supplémentaire</li>
                             <li>Possibilité de passage de l'ETG (non conducteur ou conducteur de + de 5 ans)*</li>
                             <li>Un suivi pédagogique personnalisé</li>
+<<<<<<< HEAD
                             <li class="plan-action"><a href="espace-perso.php#content" class="btn btn-primary btn-lg">Signup</a></li>
+=======
+                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Sign up</a></li>
+>>>>>>> origin/master
                         </ul>
                     </div><!--/.col-sm-4-->
                     <div class="center">
