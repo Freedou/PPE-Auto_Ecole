@@ -504,6 +504,9 @@ a:focus {
   background-color: #52b6ec;
   color: #fff;
 }
+.login{
+  text-align: center;
+}
 .icon-lg {
   font-size: 48px;
   height: 108px;

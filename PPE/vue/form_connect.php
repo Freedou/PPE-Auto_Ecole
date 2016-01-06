@@ -1,4 +1,4 @@
-<div id="login" class="navbar-brand" style="font-size: 14px">
+<div id="login" class="login" style="font-size: 14px">
 	<?php
 	if(isset($_POST['send2']))
 	{
