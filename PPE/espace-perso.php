@@ -59,7 +59,7 @@
         <div class="container">
             <div class="box first">
                 <div class="center">
-                    <h2>Qui somme nous ?</h2>
+                    <h2>Qui sommes nous ?</h2>
                     <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                 </div>
             </div><!--/.box-->
@@ -74,28 +74,28 @@
                         <div class="center">
                             <i class="fa fa-cloud icon-md icon-color1"></i>
                             <h4>Des installations modernes</h4>
-                            <p>Apprenez à conduire avec du materiel de qualité et moderne. Possibilité de réservation de cours en ligne.</p>
+                            <p>Apprenez à conduire avec du matériel de qualité et moderne. Possibilité de réservation de cours en ligne.</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
                             <i class="fa fa-thumbs-up icon-md icon-color2"></i>
                             <h4>Un suivi pédagogique de qualité</h4>
-                            <p>Nos moniteur sont à votre écoute. Il saurrons vous encadré grâce à leur nombreuses années d'expériences.</p>
+                            <p>Nos moniteurs sont à votre écoute. Il sauront vous encadrer grâce à leurs nombreuses années d'expériences.</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
                             <i class="fa fa-angle-double-right icon-md icon-color3"></i>
-                            <h4>Avancez a votre rythme</h4>
-                            <p>Nous n'avons pas tous les mêmes capacitées à apprendre, c'est pourquoi toute nos offres vous propose des heures de perfectionnements en supplément sur demande.</p>
+                            <h4>Avancez à votre rythme</h4>
+                            <p>Nous n'avons pas tous les mêmes capacités à apprendre, c'est pourquoi toutes nos offres vous proposent des heures de perfectionnements en supplément sur demande.</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
                             <i class="fa fa-car icon-md icon-color4"></i>
                             <h4>Les cours quand vous voulez, où vous voulez</h4>
-                            <p>Quite à roulez autant vous emmener! En supperpossant les différentes leçon nous vennons vous cherchez jusque devant votre domicile et vous racompagnons chez vous après. Utile pour ne pas attendre 1 heure dans une permanance ton prochain bus!</p>
+                            <p>Quite à roulez autant vous emmener! En superposant les différentes leçons nous venons vous chercher jusque devant votre domicile et vous racompagnons chez vous après. Utile pour ne pas attendre 1 heure dans une permanance votre prochain bus!</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
@@ -108,7 +108,7 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
                             <i class="fa fa-hashtag icon-md icon-color6"></i>
-                            <h4>Une auto-école dans l'êre du temps</h4>
+                            <h4>Une auto-école dans l'ère du temps</h4>
                             <p>Retrouvez nous aussi sur les réseaux sociaux.</p>
                         </div>
                     </div><!--/.col-md-4-->
@@ -122,7 +122,7 @@
             <div class="box">
                 <div class="center">
                     <h2>Nos offres</h2>
-                    <p class="lead">Toute nos offres sont flexible et modulable à votre guise.</p>
+                    <p class="lead">Toute nos offres sont flexibles et modulables à votre guise.</p>
                 </div><!--/.center-->   
                 <div class="big-gap"></div>
                 <div id="pricing-table" class="row">
@@ -138,7 +138,7 @@
                     </div><!--/.col-sm-4-->
                     <div class="col-sm-4">
                         <ul class="plan featured">
-                            <li class="plan-name">Permit auto</li>
+                            <li class="plan-name">Permis auto</li>
                             <li class="plan-price">1200€ TTC</li>
                             <li>20 heures de conduites</li>
                             <li>35€ l'heure supplémentaire</li>
@@ -149,7 +149,7 @@
                     </div><!--/.col-sm-4-->
                     <div class="col-sm-4">
                         <ul class="plan">
-                            <li class="plan-name">Permit moto</li>
+                            <li class="plan-name">Permis moto</li>
                             <li class="plan-price">700€ TTC</li>
                             <li>20 heures de conduites</li>
                             <li>40€ l'heure supplémentaire</li>
