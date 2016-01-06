@@ -103,7 +103,7 @@
                         <div class="center">
                             <i class="fa fa-angle-double-right icon-md icon-color3"></i>
                             <h4>Avancez à votre rythme</h4>
-                            <p>Nous n'avons pas tous les mêmes capacitées à apprendre, c'est pourquoi toutes nos offres vous proposent des heures de perfectionnements en supplément sur demande.</p>
+                            <p>Nous n'avons pas tous les mêmes capacités à apprendre, c'est pourquoi toutes nos offres vous proposent des heures de perfectionnements en supplément sur demande.</p>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
