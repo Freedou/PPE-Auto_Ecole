@@ -114,11 +114,11 @@
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
-                        <div class="center">
+                        <!--<div class="center">
                             <i class="fa fa-css3 icon-md icon-color5"></i>
                             <h4>Javascript development</h4>
                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-                        </div>
+                        </div>-->
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="center">

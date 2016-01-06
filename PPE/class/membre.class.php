@@ -5,7 +5,7 @@ class Membre
 	
 	public function __construct()
 	{
-		$this->bdd = new PDO("mysql:host=localhost;dbname=forum", "root", "");
+		$this->bdd = new PDO("mysql:host=localhost;dbname=auto_ecole", "root", "");
 	}
 	
 	public function getVerifPass($password, $passverif)
