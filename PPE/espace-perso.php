@@ -41,9 +41,35 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active lnk"><a href="#main-slider"><i class="fa fa-home"></i></a></li>
-                        <li class="lnk"><a href="#about-us">L'auto-école</a></li>
-                        <li class="lnk"><a href="#pricing">Nos offres</a></li>
-                        <li class="lnk"><a href="#contact">Contact</a></li>
+                        <?php
+                        if (isset($_SESSION["type"])) {
+                            switch ($_SESSION["type"]) {
+                                case '1':
+                                    ?>
+                                    <li class="lnk"><a href="#about-us">Mes cours</a></li>
+                                    <li class="lnk"><a href="#pricing">Prendre un cours</a></li>
+                                    <li class="lnk"><a href="#contact">Contact</a></li>
+                                    <?php
+                                    break;
+                                
+                                case '2': //professeur
+                                    ?>
+
+                                    <?php
+                                    break;
+
+                                case '3'://gestionnaire
+                                    ?>
+                                    
+                                    <?php
+                                    break;
+
+                                default:
+                                    
+                                    break;
+                            }
+                        }    
+                        ?>
                         <li><a href="index.php">Accueil</a></li>
                     </ul>
                 </div>
@@ -55,116 +81,73 @@
         <?php include_once('vue/form_connect.php');?>
     </section><!--/#main-slider-->
 
-    <section id="about-us">
+    <section id="content">
         <div class="container">
             <div class="box first">
                 <div class="center">
-                    <h2>Qui somme nous ?</h2>
-                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <?php
+                    if(isset($_SESSION["pseudo"]))
+                    {
+
+                    }
+                    else
+                    {
+                            if(isset($_POST['sendinsc']))
+                            {
+                                if(isset($_POST['condition']))
+                                {
+                                    $membre = new Membre();
+                                    if($membre->getVerifPass($_POST["password"], $_POST["verifpassword"])==true)
+                                    {
+                                        $membre->inscription($_POST["pseudo"], $_POST["mail"], $_POST["password"]);
+                                    }
+                                    else
+                                    {
+                                        echo "Les mots de passes ne corresponde pas.";
+                                    }
+                                }
+                                else
+                                {
+                                    echo("Vous ne pouvez pas vous inscrire sans avoir accepté les conditions d'utilisation.");
+                                }
+                            }
+                            ?>
+                            <p>Inscrivez vous pour commencer votre apprentisage dés maintenant.</p>
+                            <br/>
+                            <form id="form_insc" action="inscription.php" method="POST">
+                                <label for="pseudo" style="width: 201px;">Identifiant : </label>
+                                <input id="pseudo" type="text" name ="pseudo" style="width: 300px;" placeholder="Choisissez votre nom d'utilisateur" value="<?php if(isset($_POST['pseudo'])){echo($pseudo);}?>" required>
+                                <br/>
+                                <br/>
+                                <label for="mail" style="width: 201px;">E-mail : </label>
+                                <input id="mail" type="email" name ="mail" style="width: 300px;" placeholder="Entrez votre adresse e-mail" value="<?php if(isset($_POST['mail'])){echo($email);}?>" required>
+                                <br/>
+                                <br/>
+                                <label for="password" style="width: 201px;">Mot de passe : </label>
+                                <input id="password" type="password" name ="password" style="width: 300px;" placeholder="Crée votre mot de passe" value="<?php if(isset($_POST['mail'])){echo($password);}?>" required>
+                                <br/>
+                                <br/>
+                                <label for="verifpassword" style="width: 201px;">Valider votre mot de passe : </label>
+                                <input id="verifpassword" type="password" name ="verifpassword" style="width: 300px;" placeholder="Confirmez votre mot de passe" value="<?php if(isset($_POST['mail'])){echo($verifpassword);}?>" required>
+                                <br/>
+                                <br/>
+                                <label for="condition">Condition d'utilisation* : </label>
+                                <input id="condition" type="checkbox" name ="condition" <?php if(isset($_POST['condition'])){echo("checked");}?>>
+                                <br/>
+                                <br/>
+                                <p>* : En cochant cette case vous reconnaissez avoir pris connaissance des <a href="condition.php" target="_blank">conditions d'utilisation</a> de ce site web</p>
+                                <br/>
+                                <br/>
+                                <input type="submit" value="S'incrire" name="sendinsc">
+                            </form>
+
+                            <?php
+                    }
+                    ?>
                 </div>
             </div><!--/.box-->
         </div><!--/.container-->
     </section><!--/#about-us-->
-
-    <section id="services">
-        <div class="container">
-            <div class="box">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="center">
-                            <i class="fa fa-cloud icon-md icon-color1"></i>
-                            <h4>Des installations modernes</h4>
-                            <p>Apprenez à conduire avec du materiel de qualité et moderne. Possibilité de réservation de cours en ligne.</p>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="center">
-                            <i class="fa fa-thumbs-up icon-md icon-color2"></i>
-                            <h4>Un suivi pédagogique de qualité</h4>
-                            <p>Nos moniteur sont à votre écoute. Il saurrons vous encadré grâce à leur nombreuses années d'expériences.</p>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="center">
-                            <i class="fa fa-angle-double-right icon-md icon-color3"></i>
-                            <h4>Avancez a votre rythme</h4>
-                            <p>Nous n'avons pas tous les mêmes capacitées à apprendre, c'est pourquoi toute nos offres vous propose des heures de perfectionnements en supplément sur demande.</p>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="center">
-                            <i class="fa fa-car icon-md icon-color4"></i>
-                            <h4>Les cours quand vous voulez, où vous voulez</h4>
-                            <p>Quite à roulez autant vous emmener! En supperpossant les différentes leçon nous vennons vous cherchez jusque devant votre domicile et vous racompagnons chez vous après. Utile pour ne pas attendre 1 heure dans une permanance ton prochain bus!</p>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="center">
-                            <i class="fa fa-css3 icon-md icon-color5"></i>
-                            <h4>Javascript development</h4>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="center">
-                            <i class="fa fa-hashtag icon-md icon-color6"></i>
-                            <h4>Une auto-école dans l'êre du temps</h4>
-                            <p>Retrouvez nous aussi sur les réseaux sociaux.</p>
-                        </div>
-                    </div><!--/.col-md-4-->
-                </div><!--/.row-->
-            </div><!--/.box-->
-        </div><!--/.container-->
-    </section><!--/#services-->
-
-    <section id="pricing">
-        <div class="container">
-            <div class="box">
-                <div class="center">
-                    <h2>Nos offres</h2>
-                    <p class="lead">Toute nos offres sont flexible et modulable à votre guise.</p>
-                </div><!--/.center-->   
-                <div class="big-gap"></div>
-                <div id="pricing-table" class="row">
-                    <div class="col-sm-4">
-                        <ul class="plan">
-                            <li class="plan-name">Code de la route</li>
-                            <li class="plan-price">300€ TTC</li>
-                            <li>10 heures de cours</li>
-                            <li>Suivi de progression</li>
-                            <li>Présentation à l'examen du code de la route</li>
-                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
-                        </ul>
-                    </div><!--/.col-sm-4-->
-                    <div class="col-sm-4">
-                        <ul class="plan featured">
-                            <li class="plan-name">Permit auto</li>
-                            <li class="plan-price">1200€ TTC</li>
-                            <li>20 heures de conduites</li>
-                            <li>35€ l'heure supplémentaire</li>
-                            <li>Possibilité de passage de l'ETG (non conducteur ou conducteur de + de 5 ans)*</li>
-                            <li>Un suivi pédagogique personnalisé</li>
-                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
-                        </ul>
-                    </div><!--/.col-sm-4-->
-                    <div class="col-sm-4">
-                        <ul class="plan">
-                            <li class="plan-name">Permit moto</li>
-                            <li class="plan-price">700€ TTC</li>
-                            <li>20 heures de conduites</li>
-                            <li>40€ l'heure supplémentaire</li>
-                            <li>Possibilité de passage de l'ETG (non conducteur ou conducteur de + de 5 ans)*</li>
-                            <li>Un suivi pédagogique personnalisé</li>
-                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
-                        </ul>
-                    </div><!--/.col-sm-4-->
-                    <div class="center">
-                        <p>* : le code de la route fait office d'ETG.</p>
-                    </div><!--/.center-->
-                </div> 
-            </div> 
-        </div>
-    </section><!--/#pricing-->
 
     <section id="contact">
         <div class="container">

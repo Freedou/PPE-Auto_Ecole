@@ -26,7 +26,7 @@
 			<input id="pseudo" type="text" name ="pseudo" placeholder="E-mail ou Pseudo">
 			<input id="password" type="password" name ="password" placeholder="Mot de passe">
 			<input type="submit" value="Connecter" name="send">
-			<a href="inscription.php">Pas encore inscrit ?</a>
+			<a href="#content">Pas encore inscrit ?</a>
 		</form>
 		<?php
 	}
