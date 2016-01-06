@@ -19,6 +19,10 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <?php
+    session_start();
+    include "class/membre.class.php";
+    ?>
 </head><!--/head-->
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
@@ -40,7 +44,7 @@
                         <li class="lnk"><a href="#about-us">L'auto-école</a></li>
                         <li class="lnk"><a href="#pricing">Nos offres</a></li>
                         <li class="lnk"><a href="#contact">Contact</a></li>
-                        <li><a href="espace-perso.php">Espace Client</a></li>
+                        <li><a href="index.php">Accueil</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,26 +52,7 @@
     </header><!--/#header-->
 
     <section id="main-slider" class="carousel">
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="container">
-                    <div class="carousel-content">
-                        <h1>Il nous recommande!</h1>
-                        <p class="lead">Déjà souligner par de nombreux média tel que le Figaro et le Parisiens pour nos quatités des services. Nous vous proposons aujourd'hui une interface complete en ligne de prise de rendez-vous pour vous inscrire et reserver vos future lecon.</p>
-                    </div>
-                </div>
-            </div><!--/.item-->
-            <div class="item">
-                <div class="container">
-                    <div class="carousel-content">
-                        <h1>Des offres adapter à vos besoins.</h1>
-                        <p class="lead">Decouvrez nos offres flexible en fonction de vos besoins, vous serez encadré par nos moniteurs expérimentés de nombreuses années d'expériences.</p>
-                    </div>
-                </div>
-            </div><!--/.item-->
-        </div><!--/.carousel-inner-->
-        <a class="prev" href="#main-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-        <a class="next" href="#main-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+        <?php include_once('vue/form_connect.php');?>
     </section><!--/#main-slider-->
 
     <section id="about-us">
