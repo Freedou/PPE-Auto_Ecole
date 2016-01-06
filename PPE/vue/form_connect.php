@@ -25,8 +25,8 @@
 		<form id="form_login" class="form_login" action="" method="POST">
 			<input id="pseudo" type="text" name ="pseudo" placeholder="E-mail ou Pseudo">
 			<input id="password" type="password" name ="password" placeholder="Mot de passe">
-			<input type="submit" value="Connecter" name="send">
 			<a href="inscription.php">Pas encore inscrit ?</a>
+			<input type="submit" value="Envoyer" name="send" style="display: none;">
 		</form>
 		<?php
 	}
