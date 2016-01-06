@@ -9,6 +9,7 @@
 	{
 		$membre = new Membre();
 		$membre->connection($_POST["pseudo"], $_POST["password"]);
+		echo("<meta http-equiv=\"Refresh\" content=\"0\">");
 	}
 	if(isset($_SESSION["pseudo"]))
 	{
