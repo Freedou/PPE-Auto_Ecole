@@ -148,11 +148,7 @@
                             <li>10 heures de cours</li>
                             <li>Suivi de progression</li>
                             <li>Présentation à l'examen du code de la route</li>
-<<<<<<< HEAD
                             <li class="plan-action"><a href="espace-perso.php#content" class="btn btn-primary btn-lg">Signup</a></li>
-=======
-                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Sign up</a></li>
->>>>>>> origin/master
                         </ul>
                     </div><!--/.col-sm-4-->
                     <div class="col-sm-4">
@@ -163,11 +159,7 @@
                             <li>35€ l'heure supplémentaire</li>
                             <li>Possibilité de passage de l'ETG (non conducteur ou conducteur de + de 5 ans)*</li>
                             <li>Un suivi pédagogique personnalisé</li>
-<<<<<<< HEAD
                             <li class="plan-action"><a href="espace-perso.php#content" class="btn btn-primary btn-lg">Signup</a></li>
-=======
-                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Sign up</a></li>
->>>>>>> origin/master
                         </ul>
                     </div><!--/.col-sm-4-->
                     <div class="col-sm-4">
@@ -178,11 +170,7 @@
                             <li>40€ l'heure supplémentaire</li>
                             <li>Possibilité de passage de l'ETG (non conducteur ou conducteur de + de 5 ans)*</li>
                             <li>Un suivi pédagogique personnalisé</li>
-<<<<<<< HEAD
                             <li class="plan-action"><a href="espace-perso.php#content" class="btn btn-primary btn-lg">Signup</a></li>
-=======
-                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Sign up</a></li>
->>>>>>> origin/master
                         </ul>
                     </div><!--/.col-sm-4-->
                     <div class="center">
