@@ -42,9 +42,13 @@
                     <ul class="nav navbar-nav">
                         <li class="active lnk"><a href="#main-slider"><i class="fa fa-home"></i></a></li>
                         <?php
+
+
+
+
                         if (isset($_SESSION["type"])) {
                             switch ($_SESSION["type"]) {
-                                case '1':
+                                case '1': //eleve
                                     ?>
                                     <li class="lnk"><a href="#planning">Planning</a></li>
                                     <li class="lnk"><a href="#lesson">Prendre un cours</a></li>
@@ -57,7 +61,7 @@
                                     <?php
                                     break;
 
-                                case '3'://gestionnaire
+                                case '3': //gestionnaire
                                     ?>
                                     <li class="lnk"><a href="#lesson">Inscrire un cours</a></li>
                                     <?php
@@ -97,7 +101,7 @@
                                     $membre = new Membre();
                                     if($membre->getVerifPass($_POST["password"], $_POST["verifpassword"])==true)
                                     {
-                                        $membre->inscription($_POST["pseudo"], $_POST["mail"], $_POST["password"], $_POST["nom"], $_POST["prenom"]);
+                                        $membre->inscription($_POST["mail"], $_POST["password"], $_POST["nom"], $_POST["prenom"], $_POST["datenaiss"], $_POST["adresse"]);
                                     }
                                     else
                                     {
@@ -112,33 +116,37 @@
                             ?>
                             <p>Inscrivez vous pour commencer votre apprentisage dés maintenant.</p>
                             <br/>
-                            <form id="form_insc" action="inscription.php" method="POST">
-                                <label for="pseudo" style="width: 201px;">Identifiant : </label>
-                                <input id="pseudo" type="text" name ="pseudo" style="width: 300px;" placeholder="Choisissez votre nom d'utilisateur" value="<?php if(isset($_POST['pseudo'])){echo($pseudo);}?>" required>
-                                <br/>
-                                <br/>
+                            <form id="form_insc" action="" method="POST">
                                 <label for="nom" style="width: 201px;">Nom : </label>
-                                <input id="nom" type="text" name ="nom" style="width: 300px;" placeholder="Entrez votre nom" value="<?php if(isset($_POST['pseudo'])){echo($pseudo);}?>" required>
+                                <input id="nom" type="text" name ="nom" style="width: 300px;" placeholder="Entrez votre nom" value="<?php if(isset($_POST['nom'])){echo($_POST['nom']);}?>" required>
                                 <br/>
                                 <br/>
                                 <label for="prenom" style="width: 201px;">Prénom : </label>
-                                <input id="prenom" type="text" name ="prenom" style="width: 300px;" placeholder="Entrez votre prénom" value="<?php if(isset($_POST['pseudo'])){echo($pseudo);}?>" required>
+                                <input id="prenom" type="text" name ="prenom" style="width: 300px;" placeholder="Entrez votre prénom" value="<?php if(isset($_POST['prenom'])){echo($_POST['prenom']);}?>" required>
+                                <br/>
+                                <br/>
+                                <label for="adresse" style="width: 201px;">Adresse complète : </label>
+                                <input id="adresse" type="text" name ="adresse" style="width: 300px;" placeholder="Entrez votre prénom" value="<?php if(isset($_POST['adresse'])){echo($_POST['adresse']);}?>" required>
                                 <br/>
                                 <br/>
                                 <label for="mail" style="width: 201px;">E-mail : </label>
-                                <input id="mail" type="email" name ="mail" style="width: 300px;" placeholder="Entrez votre adresse e-mail" value="<?php if(isset($_POST['mail'])){echo($email);}?>" required>
+                                <input id="mail" type="email" name ="mail" style="width: 300px;" placeholder="Entrez votre adresse e-mail" value="<?php if(isset($_POST['mail'])){echo($_POST['mail']);}?>" required>
+                                <br/>
+                                <br/>
+                                <label for="datenaiss" style="width: 201px;">Date de naissance : </label>
+                                <input id="datenaiss" type="date" name ="datenaiss" style="width: 300px;" placeholder="Entrez votre prénom" value="<?php if(isset($_POST['datenaiss'])){echo($_POST['datenaiss']);}?>" required>
                                 <br/>
                                 <br/>
                                 <label for="password" style="width: 201px;">Mot de passe : </label>
-                                <input id="password" type="password" name ="password" style="width: 300px;" placeholder="Crée votre mot de passe" value="<?php if(isset($_POST['mail'])){echo($password);}?>" required>
+                                <input id="password" type="password" name ="password" style="width: 300px;" placeholder="Crée votre mot de passe" value="<?php if(isset($_POST['password'])){echo($_POST['password']);}?>" required>
                                 <br/>
                                 <br/>
                                 <label for="verifpassword" style="width: 201px;">Valider votre mot de passe : </label>
-                                <input id="verifpassword" type="password" name ="verifpassword" style="width: 300px;" placeholder="Confirmez votre mot de passe" value="<?php if(isset($_POST['mail'])){echo($verifpassword);}?>" required>
+                                <input id="verifpassword" type="password" name ="verifpassword" style="width: 300px;" placeholder="Confirmez votre mot de passe" value="<?php if(isset($_POST['verifpassword'])){echo($_POST['verifpassword']);}?>" required>
                                 <br/>
                                 <br/>
-                                <label for="condition">Condition d'utilisation* : </label>
-                                <input id="condition" type="checkbox" name ="condition" <?php if(isset($_POST['condition'])){echo("checked");}?>>
+                                <label for="condition" style="width: 201px;">Condition d'utilisation* : </label>
+                                <input id="condition" type="checkbox" name ="condition" style="width: 300px;" <?php if(isset($_POST['condition'])){echo("checked");}?>>
                                 <br/>
                                 <br/>
                                 <p>* : En cochant cette case vous reconnaissez avoir pris connaissance des <a href="condition.php" target="_blank">conditions d'utilisation</a> de ce site web</p>

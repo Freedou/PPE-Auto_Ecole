@@ -1,55 +1,151 @@
-CREATE TABLE IF NOT EXISTS user (
-  id_user varchar(32) NOT NULL,
-  nom varchar(32) NOT NULL,
-  prenom varchar(32) NOT NULL,
-  email varchar(128) NOT NULL,
-  password varchar(255) CHARACTER SET latin1 COLLATE latin1_general_cs NOT NULL,
-  date_inscription date DEFAULT NULL,
-  type int(1) NOT NULL DEFAULT 1 COMMENT 1 = eleve, 2 = prof, 3 = gestionnaire,
-  PRIMARY KEY (id_user),
-  UNIQUE KEY e_mail (e_mail)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-INSERT INTO user (id_user, e_mail, password, date_inscription, type) VALUES
-('El Barto', 'Freedou@live.fr', 'e71429b169fb38fe425af8a7f5ef9ad3a03866b6', 2015-11-03, 1),
-('Freedou', 'freeboy-@hotmail.fr', 'e71429b169fb38fe425af8a7f5ef9ad3a03866b6', 2015-06-18, 3),
-('Joffray', 'joffray.billon@gmail.com', 'e71429b169fb38fe425af8a7f5ef9ad3a03866b6', 2015-06-18, 2);
-
-/* ajouter une contrainte exclusion*/
-
 CREATE TABLE eleve(
-	id_user varchar(32) NOT NULL,
-	primary key (id_user),
-	foreign key id_user references user(id_user),
-)ENGINE=InnoDB;
+	id_user int primary key AUTO_INCREMENT,
+	date_insc date NOT NULL,
+	date_naiss date NOT NULL,
+	nom varchar(32) NOT NULL,
+	prenom varchar(32) NOT NULL,
+	password varchar(40) CHARACTER SET latin1 COLLATE latin1_general_cs NOT NULL,
+	email varchar(128) NOT NULL,
+	coordonnee varchar(128) NOT NULL
+)ENGINE=InnoDB
 
-CREATE TABLE prof(
-	id_user varchar(32) NOT NULL,
-	primary key (id_user),
-	foreign key id_user references user(id_user),
-)ENGINE=InnoDB;
+CREATE TABLE moniteur(
+	id_user int primary key AUTO_INCREMENT,
+	qualification varchar(32) NOT NULL,
+	nom varchar(32) NOT NULL,
+	prenom varchar(32) NOT NULL,
+	password varchar(40) CHARACTER SET latin1 COLLATE latin1_general_cs NOT NULL,
+	email varchar(128) NOT NULL
+)ENGINE=InnoDB
+
+CREATE TABLE gestionnaire(
+	id_user int primary key AUTO_INCREMENT,
+	nom varchar(32) NOT NULL,
+	prenom varchar(32) NOT NULL,
+	password varchar(40) CHARACTER SET latin1 COLLATE latin1_general_cs NOT NULL,
+	email varchar(128) NOT NULL
+)ENGINE=InnoDB
+
+CREATE TABLE user(
+	id_user int primary key AUTO_INCREMENT,
+	nom varchar(32) NOT NULL,
+	prenom varchar(32) NOT NULL,
+	password varchar(40) CHARACTER SET latin1 COLLATE latin1_general_cs NOT NULL,
+	email varchar(128) NOT NULL
+)ENGINE=InnoDB
 
 CREATE TABLE planning(
-	id_cours int AUTO_INCREMENT NOT NULL,
-	date_cours datetime UNIQUE,
-	eleve varchar(32) NOT NULL,
-	prof varchar(32) NOT NULL,
-	type int(3) NOT NULL,
-	primary key(id_cours),
-	foreign key eleve references eleve(id_user),
-	foreign key prof references prof(id_user)
-)ENGINE=InnoDB;
+	id_user int primary key AUTO_INCREMENT,
+	id_cours int primary key AUTO_INCREMENT,
+	id_user_1 int primary key AUTO_INCREMENT,
+	date_heure_debut datetime primary key,
+	heure_fin datetime NOT NULL,
+	etat varchar(32),
+	foreign key id_user references eleve(id_user),
+	foreign key id_user_1 references moniteur(id_user),
+	foreign key id_cours references cours(id_cours)
+)ENGINE=InnoDB
 
-DROP TRIGGER deleteUser;
+CREATE TABLE cours(
+	id_cours int primary key AUTO_INCREMENT,
+	id_user int AUTO_INCREMENT,
+	type_cours varchar(32),
+	date_cours datetime,
+	foreign key id_user references moniteur(id_user)
+)ENGINE=InnoDB
+
+
+/* Trigger heritage eleve, moniteur, gestionnaire vers user */
+
+DROP TRIGGER deleteEleve;
 DELIMITER //
-CREATE TRIGGER deleteUser
-BEFORE DELETE ON user
+CREATE TRIGGER deleteEleve
+BEFORE DELETE ON eleve
 FOR EACH ROW
 BEGIN
-	DELETE FROM planning WHERE eleve=old.id_user OR prof=old.id_user;
+	DELETE FROM user WHERE eleve=old.id_user;
 END //
 delimiter ;
 
+DROP TRIGGER deleteMoniteur;
+DELIMITER //
+CREATE TRIGGER deleteMoniteur
+BEFORE DELETE ON moniteur
+FOR EACH ROW
+BEGIN
+	DELETE FROM user WHERE eleve=old.id_user;
+END //
+delimiter ;
+
+DROP TRIGGER deleteGestionnaire;
+DELIMITER //
+CREATE TRIGGER deleteGestionnaire
+BEFORE DELETE ON gestionnaire
+FOR EACH ROW
+BEGIN
+	DELETE FROM user WHERE id_user=old.id_user;
+END //
+delimiter ;
+
+DROP TRIGGER updateEleve;
+DELIMITER //
+CREATE TRIGGER updateEleve
+BEFORE DELETE ON eleve
+FOR EACH ROW
+BEGIN
+	UPDATE user SET id_user=new.id_user, email=new.email, password=new.password, nom=new.nom, prenom=new.prenom WHERE id_user=new.id_user;
+END //
+delimiter ;
+
+DROP TRIGGER updateMoniteur;
+DELIMITER //
+CREATE TRIGGER updateMoniteur
+BEFORE DELETE ON moniteur
+FOR EACH ROW
+BEGIN
+	UPDATE user SET id_user=new.id_user, email=new.email, password=new.password, nom=new.nom, prenom=new.prenom WHERE id_user=new.id_user;
+END //
+delimiter ;
+
+DROP TRIGGER updateGestionnaire;
+DELIMITER //
+CREATE TRIGGER updateGestionnaire
+BEFORE DELETE ON gestionnaire
+FOR EACH ROW
+BEGIN
+	UPDATE user SET id_user=new.id_user, email=new.email, password=new.password, nom=new.nom, prenom=new.prenom WHERE id_user=new.id_user;
+END //
+delimiter ;
+
+DROP TRIGGER addEleve;
+DELIMITER //
+CREATE TRIGGER addEleve
+BEFORE INSERT ON eleve
+FOR EACH ROW
+BEGIN
+	INSERT INTO user (id_user, email, password, nom, prenom) VALUES (new.id_user, new.email, new.password, new.nom, new.prenom)
+END //
+delimiter ;
+
+DROP TRIGGER addMoniteur;
+DELIMITER //
+CREATE TRIGGER addMoniteur
+BEFORE INSERT ON moniteur
+FOR EACH ROW
+BEGIN
+	INSERT INTO user (id_user, email, password, nom, prenom) VALUES (new.id_user, new.email, new.password, new.nom, new.prenom)
+END //
+delimiter ;
+
+DROP TRIGGER addGestionnaire;
+DELIMITER //
+CREATE TRIGGER addGestionnaire
+BEFORE INSERT ON gestionnaire
+FOR EACH ROW
+BEGIN
+	INSERT INTO user (id_user, email, password, nom, prenom) VALUES (new.id_user, new.email, new.password, new.nom, new.prenom)
+END //
+delimiter ;
 
 
 declare x int;
@@ -57,3 +153,8 @@ declare x int;
 	IF x=0
 	THEN
 		INSERT INTO user VALUES (new.id_user);
+
+INSERT INTO user (id_user, e_mail, password, date_inscription, type) VALUES
+('1', 'Freedou@live.fr', 'e71429b169fb38fe425af8a7f5ef9ad3a03866b6', 2015-11-03, 1),
+('2', 'freeboy-@hotmail.fr', 'e71429b169fb38fe425af8a7f5ef9ad3a03866b6', 2015-06-18, 2),
+('3', 'joffray.billon@gmail.com', 'e71429b169fb38fe425af8a7f5ef9ad3a03866b6', 2015-06-18, 3);
