@@ -46,30 +46,28 @@
                             switch ($_SESSION["type"]) {
                                 case '1':
                                     ?>
-                                    <li class="lnk"><a href="#about-us">Mes cours</a></li>
-                                    <li class="lnk"><a href="#pricing">Prendre un cours</a></li>
-                                    <li class="lnk"><a href="#contact">Contact</a></li>
+                                    <li class="lnk"><a href="#planning">Planning</a></li>
+                                    <li class="lnk"><a href="#lesson">Prendre un cours</a></li>
                                     <?php
                                     break;
                                 
                                 case '2': //professeur
                                     ?>
-
+                                    <li class="lnk"><a href="#about-us">Planning</a></li>
                                     <?php
                                     break;
 
                                 case '3'://gestionnaire
                                     ?>
-                                    
+                                    <li class="lnk"><a href="#lesson">Inscrire un cours</a></li>
                                     <?php
                                     break;
 
-                                default:
-                                    
-                                    break;
+                                default:break;
                             }
                         }    
                         ?>
+                        <li class="lnk"><a href="#contact">Contact</a></li>
                         <li><a href="index.php">Accueil</a></li>
                     </ul>
                 </div>
@@ -99,7 +97,7 @@
                                     $membre = new Membre();
                                     if($membre->getVerifPass($_POST["password"], $_POST["verifpassword"])==true)
                                     {
-                                        $membre->inscription($_POST["pseudo"], $_POST["mail"], $_POST["password"]);
+                                        $membre->inscription($_POST["pseudo"], $_POST["mail"], $_POST["password"], $_POST["nom"], $_POST["prenom"]);
                                     }
                                     else
                                     {
@@ -117,6 +115,14 @@
                             <form id="form_insc" action="inscription.php" method="POST">
                                 <label for="pseudo" style="width: 201px;">Identifiant : </label>
                                 <input id="pseudo" type="text" name ="pseudo" style="width: 300px;" placeholder="Choisissez votre nom d'utilisateur" value="<?php if(isset($_POST['pseudo'])){echo($pseudo);}?>" required>
+                                <br/>
+                                <br/>
+                                <label for="nom" style="width: 201px;">Nom : </label>
+                                <input id="nom" type="text" name ="nom" style="width: 300px;" placeholder="Entrez votre nom" value="<?php if(isset($_POST['pseudo'])){echo($pseudo);}?>" required>
+                                <br/>
+                                <br/>
+                                <label for="prenom" style="width: 201px;">Prénom : </label>
+                                <input id="prenom" type="text" name ="prenom" style="width: 300px;" placeholder="Entrez votre prénom" value="<?php if(isset($_POST['pseudo'])){echo($pseudo);}?>" required>
                                 <br/>
                                 <br/>
                                 <label for="mail" style="width: 201px;">E-mail : </label>

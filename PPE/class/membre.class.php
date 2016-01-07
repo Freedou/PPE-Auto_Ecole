@@ -5,7 +5,7 @@ class Membre
 	
 	public function __construct()
 	{
-		$this->bdd = new PDO("mysql:host=localhost;dbname=auto_ecole", "root", "");
+		$this->bdd = new PDO("mysql:host=localhost;dbname=forum", "root", "");
 	}
 	
 	public function getVerifPass($password, $passverif)
@@ -20,7 +20,7 @@ class Membre
 		}
 	}
 	
-	public function inscription($pseudo, $email, $password)
+	public function inscription($pseudo, $email, $password, $nom, $prenom)
 	{
 		$req = $this->bdd->prepare("SELECT ID_User FROM user WHERE ID_User=:pseudo");
 		$req->execute(array("pseudo" => $pseudo));
@@ -43,11 +43,13 @@ class Membre
 		if(!$doubleid && !$doublemail)
 		{
 			$password = sha1($password);
-			$req = $this->bdd->prepare("INSERT INTO user(ID_User, E_Mail, Password, Date_Inscription) VALUES(:pseudo, :email, :pass, CURDATE())");
+			$req = $this->bdd->prepare("INSERT INTO user(ID_User, E_Mail, Password, Date_Inscription, nom, prenom) VALUES(:pseudo, :email, :pass, CURDATE(), :nom, :prenom)");
 			$req->execute(array(
 				"pseudo" => $pseudo,
 				"pass" => $password,
-				"email" => $email));
+				"email" => $email,
+				"nom" => $nom,
+				"prenom" => $prenom));
 			echo("Félicitation vous etes maintenant inscrit sur notre site web.");
 			echo"<br/><br/>";
 			echo"<meta http-equiv=\"Refresh\" content=\"2;URL=index.php\">";
