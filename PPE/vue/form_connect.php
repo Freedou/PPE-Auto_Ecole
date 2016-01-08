@@ -8,13 +8,13 @@
 	if(isset($_POST['send']))
 	{
 		$membre = new Membre();
-		$resultat=$membre->connection($_POST["pseudo"], $_POST["password"]);
+		$resultat=$membre->connection($_POST["email"], $_POST["password"]);
 		if($resultat)
 		{
-			$_SESSION['id_user']=$resultat['id_user'];
+			$_SESSION['id_user']=$membre->findReal($resultat['email']);
 			$_SESSION['prenom']=$resultat['prenom'];
 			$_SESSION['nom']=$resultat['nom'];
-			$_SESSION['type']=$membre->findType($_SESSION['id_user']);
+			$_SESSION['type']=$membre->findType($resultat['email']);
 		}
 		else
 		{
@@ -36,7 +36,7 @@
 	{
 		?>
 		<form id="form_login" action="" method="POST">
-			<input id="pseudo" type="text" name ="pseudo" placeholder="E-mail ou Pseudo">
+			<input id="email" type="text" name ="email" placeholder="E-mail">
 			<input id="password" type="password" name ="password" placeholder="Mot de passe">
 			<input type="submit" value="Connecter" name="send">
 			<a href="#content">Pas encore inscrit ?</a>

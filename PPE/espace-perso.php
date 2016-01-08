@@ -42,10 +42,6 @@
                     <ul class="nav navbar-nav">
                         <li class="active lnk"><a href="#main-slider"><i class="fa fa-home"></i></a></li>
                         <?php
-
-
-
-
                         if (isset($_SESSION["type"])) {
                             switch ($_SESSION["type"]) {
                                 case '1': //eleve
@@ -57,7 +53,7 @@
                                 
                                 case '2': //professeur
                                     ?>
-                                    <li class="lnk"><a href="#about-us">Planning</a></li>
+                                    <li class="lnk"><a href="#planning">Planning</a></li>
                                     <?php
                                     break;
 
@@ -67,7 +63,7 @@
                                     <?php
                                     break;
 
-                                default:break;
+                                default:  break;
                             }
                         }    
                         ?>
@@ -79,7 +75,7 @@
         </div>
     </header><!--/#header-->
 
-    <section id="main-slider" class="carousel">
+    <section id="main-slider" class="login">
         <?php include_once('vue/form_connect.php');?>
     </section><!--/#main-slider-->
 
@@ -88,9 +84,9 @@
             <div class="box first">
                 <div class="center">
                     <?php
-                    if(isset($_SESSION["pseudo"]))
+                    if(isset($_SESSION["id_user"]))
                     {
-
+                        include_once("vue/planning.php");
                     }
                     else
                     {
@@ -162,6 +158,8 @@
             </div><!--/.box-->
         </div><!--/.container-->
     </section><!--/#about-us-->
+
+    <?php include_once("vue/entreeCours.php"); ?>
 
     <section id="contact">
         <div class="container">
