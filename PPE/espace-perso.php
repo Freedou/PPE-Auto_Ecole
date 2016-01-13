@@ -46,14 +46,14 @@
                             switch ($_SESSION["type"]) {
                                 case '1': //eleve
                                     ?>
-                                    <li class="lnk"><a href="#planning">Planning</a></li>
+                                    <li class="lnk"><a href="#content">Planning</a></li>
                                     <li class="lnk"><a href="#lesson">Prendre un cours</a></li>
                                     <?php
                                     break;
                                 
                                 case '2': //professeur
                                     ?>
-                                    <li class="lnk"><a href="#planning">Planning</a></li>
+                                    <li class="lnk"><a href="#content">Planning</a></li>
                                     <?php
                                     break;
 
@@ -159,7 +159,12 @@
         </div><!--/.container-->
     </section><!--/#about-us-->
 
-    <?php include_once("vue/entreeCours.php"); ?>
+    <?php
+    if(isset($_SESSION["id_user"]))
+    {
+        include_once("vue/entreeCours.php");
+    }
+    ?>
 
     <section id="contact">
         <div class="container">

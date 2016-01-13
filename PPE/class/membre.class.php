@@ -191,7 +191,7 @@ class Membre
 
 	public function afficherMesCours($eleve)
 	{
-		$req = $this->bdd->prepare("SELECT * FROM planning WHERE id_user=:eleve");
+		$req = $this->bdd->prepare("SELECT * FROM planning WHERE id_user=:eleve ORDER BY date_heure_debut");
 		$req->execute(array("eleve" => $eleve));
 		$resultat = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $resultat;
@@ -199,7 +199,7 @@ class Membre
 
 	public function afficherMesLesson($moniteur)
 	{
-		$req = $this->bdd->prepare("SELECT * FROM planning WHERE id_moniteur=:moniteur");
+		$req = $this->bdd->prepare("SELECT * FROM planning WHERE id_moniteur=:moniteur ORDER BY date_heure_debut");
 		$req->execute(array("moniteur" => $moniteur));
 		$resultat = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $resultat;

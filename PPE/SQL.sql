@@ -220,6 +220,8 @@ CREATE TABLE planning(
 
 INSERT INTO planning(id_user, id_moniteur, date_heure_debut, etat) VALUES(2, 1, '2016-01-09 09:00:00', 'Prochainement');
 
+SELECT * FROM planning WHERE id_moniteur=1 AND date_heure_debut like '2016-01-10 08%';
+
 DROP TRIGGER addplanning;
 DELIMITER //
 CREATE TRIGGER addplanning
@@ -234,3 +236,4 @@ DECLARE nb int;
 END IF;
 END //
 delimiter ;
+

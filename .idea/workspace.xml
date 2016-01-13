@@ -25,7 +25,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PPE/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -35,8 +35,8 @@
       <file leaf-file-name="espace-perso.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PPE/espace-perso.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-55.576923">
-              <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.3461537">
+              <caret line="48" column="69" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -45,11 +45,9 @@
       <file leaf-file-name="form_connect.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PPE/vue/form_connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
+            <state vertical-scroll-proportion="-7.9615383">
               <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,50 +55,42 @@
       <file leaf-file-name="entreeCours.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PPE/vue/entreeCours.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4528303">
+            <state vertical-scroll-proportion="-13.076923">
               <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                <marker date="1452221265191" expanded="true" signature="570:906" placeholder="..." />
-                <marker date="1452221265191" expanded="true" signature="809:906" placeholder="..." />
-                <marker date="1452221265191" expanded="true" signature="1255:1474" placeholder="..." />
-                <marker date="1452221265191" expanded="true" signature="1340:1474" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="planning.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="planning.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PPE/vue/planning.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8011494">
+            <state vertical-scroll-proportion="-26.807692">
               <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membre.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="membre.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PPE/class/membre.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.849056">
-              <caret line="207" column="33" selection-start-line="207" selection-start-column="20" selection-end-line="207" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.4827586">
+              <caret line="201" column="112" selection-start-line="201" selection-start-column="112" selection-end-line="201" selection-end-column="112" />
               <folding>
-                <marker date="1452224532176" expanded="true" signature="420:461" placeholder="SELECT email..user..." />
-                <marker date="1452224532176" expanded="true" signature="787:948" placeholder="INSERT INTO ..." />
-                <marker date="1452224532176" expanded="true" signature="1402:1458" placeholder="SELECT * FRO..user..." />
-                <marker date="1452224532176" expanded="true" signature="1716:1759" placeholder="SELECT * FRO..." />
-                <marker date="1452224532176" expanded="true" signature="2780:2802" placeholder="SELECT * FRO..moniteur..." />
-                <marker date="1452224532176" expanded="true" signature="2961:2980" placeholder="SELECT * FRO..eleve..." />
-                <marker date="1452224532176" expanded="true" signature="3237:3269" placeholder="SELECT * FRO..planning..." />
-                <marker date="1452224532176" expanded="true" signature="3237:3315" placeholder="SELECT * FRO..planning..." />
-                <marker date="1452224532176" expanded="true" signature="3237:3331" placeholder="SELECT * FRO..planning..." />
-                <marker date="1452224532176" expanded="true" signature="3858:3981" placeholder="INSERT INTO ..." />
-                <marker date="1452224532176" expanded="true" signature="4279:4322" placeholder="SELECT * FRO..planning..." />
-                <marker date="1452224532176" expanded="true" signature="4520:4570" placeholder="SELECT * FRO..planning..." />
-                <marker date="1452224532176" expanded="true" signature="4560:4570" placeholder="SELECT * FRO..planning..." />
-                <marker date="1452224532176" expanded="true" signature="4767:4819" placeholder="SELECT preno..eleve..." />
-                <marker date="1452224532176" expanded="true" signature="5015:5066" placeholder="SELECT preno..moniteur..." />
+                <marker date="1452238514018" expanded="true" signature="420:461" placeholder="SELECT email..user..." />
+                <marker date="1452238514018" expanded="true" signature="787:948" placeholder="INSERT INTO ..." />
+                <marker date="1452238514018" expanded="true" signature="1402:1458" placeholder="SELECT * FRO..user..." />
+                <marker date="1452238514018" expanded="true" signature="1716:1759" placeholder="SELECT * FRO..." />
+                <marker date="1452238514018" expanded="true" signature="2780:2802" placeholder="SELECT * FRO..moniteur..." />
+                <marker date="1452238514018" expanded="true" signature="2961:2980" placeholder="SELECT * FRO..eleve..." />
+                <marker date="1452238514018" expanded="true" signature="3237:3331" placeholder="SELECT * FRO..planning..." />
+                <marker date="1452238514018" expanded="true" signature="3858:3981" placeholder="INSERT INTO ..." />
+                <marker date="1452238514018" expanded="true" signature="4279:4348" placeholder="SELECT * FRO..planning..." />
+                <marker date="1452238514018" expanded="true" signature="4546:4596" placeholder="SELECT * FRO..planning..." />
+                <marker date="1452238514018" expanded="true" signature="4546:4622" placeholder="SELECT * FRO..planning..." />
+                <marker date="1452238514018" expanded="true" signature="4819:4871" placeholder="SELECT preno..eleve..." />
+                <marker date="1452238514018" expanded="true" signature="5067:5118" placeholder="SELECT preno..moniteur..." />
               </folding>
             </state>
           </provider>
@@ -111,11 +101,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PPE/espace-perso.php" />
         <option value="$PROJECT_DIR$/PPE/vue/form_connect.php" />
         <option value="$PROJECT_DIR$/PPE/vue/entreeCours.php" />
-        <option value="$PROJECT_DIR$/PPE/class/membre.class.php" />
         <option value="$PROJECT_DIR$/PPE/vue/planning.php" />
+        <option value="$PROJECT_DIR$/PPE/espace-perso.php" />
+        <option value="$PROJECT_DIR$/PPE/class/membre.class.php" />
       </list>
     </option>
   </component>
@@ -159,7 +149,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,7 +210,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,6 +239,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
   </component>
@@ -270,7 +266,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13272922" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1337953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3365801" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -317,6 +313,68 @@
     <entry file="file://$PROJECT_DIR$/PPE/espace-perso.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE/vue/form_connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE/vue/entreeCours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE/vue/planning.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE/class/membre.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="207" column="33" selection-start-line="207" selection-start-column="20" selection-end-line="207" selection-end-column="33" />
+          <folding>
+            <marker date="1452238514018" expanded="true" signature="420:461" placeholder="SELECT email..user..." />
+            <marker date="1452238514018" expanded="true" signature="787:948" placeholder="INSERT INTO ..." />
+            <marker date="1452238514018" expanded="true" signature="1402:1458" placeholder="SELECT * FRO..user..." />
+            <marker date="1452238514018" expanded="true" signature="1716:1759" placeholder="SELECT * FRO..." />
+            <marker date="1452238514018" expanded="true" signature="2780:2802" placeholder="SELECT * FRO..moniteur..." />
+            <marker date="1452238514018" expanded="true" signature="2961:2980" placeholder="SELECT * FRO..eleve..." />
+            <marker date="1452238514018" expanded="true" signature="3237:3331" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="3858:3981" placeholder="INSERT INTO ..." />
+            <marker date="1452238514018" expanded="true" signature="4279:4348" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="4546:4596" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="4546:4622" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="4819:4871" placeholder="SELECT preno..eleve..." />
+            <marker date="1452238514018" expanded="true" signature="5067:5118" placeholder="SELECT preno..moniteur..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE/espace-perso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="115" column="85" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="85" />
           <folding />
         </state>
@@ -326,13 +384,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <marker date="1452221265191" expanded="true" signature="570:906" placeholder="..." />
-            <marker date="1452221265191" expanded="true" signature="809:906" placeholder="..." />
-            <marker date="1452221265191" expanded="true" signature="1255:1474" placeholder="..." />
-            <marker date="1452221265191" expanded="true" signature="1340:1474" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -349,21 +401,19 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="131" column="11" selection-start-line="131" selection-start-column="11" selection-end-line="131" selection-end-column="11" />
           <folding>
-            <marker date="1452224532176" expanded="true" signature="420:461" placeholder="SELECT email..user..." />
-            <marker date="1452224532176" expanded="true" signature="787:948" placeholder="INSERT INTO ..." />
-            <marker date="1452224532176" expanded="true" signature="1402:1458" placeholder="SELECT * FRO..user..." />
-            <marker date="1452224532176" expanded="true" signature="1716:1759" placeholder="SELECT * FRO..." />
-            <marker date="1452224532176" expanded="true" signature="2780:2802" placeholder="SELECT * FRO..moniteur..." />
-            <marker date="1452224532176" expanded="true" signature="2961:2980" placeholder="SELECT * FRO..eleve..." />
-            <marker date="1452224532176" expanded="true" signature="3237:3269" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="3237:3315" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="3237:3331" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="3858:3981" placeholder="INSERT INTO ..." />
-            <marker date="1452224532176" expanded="true" signature="4279:4322" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="4520:4570" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="4560:4570" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="4767:4819" placeholder="SELECT preno..eleve..." />
-            <marker date="1452224532176" expanded="true" signature="5015:5066" placeholder="SELECT preno..moniteur..." />
+            <marker date="1452238514018" expanded="true" signature="420:461" placeholder="SELECT email..user..." />
+            <marker date="1452238514018" expanded="true" signature="787:948" placeholder="INSERT INTO ..." />
+            <marker date="1452238514018" expanded="true" signature="1402:1458" placeholder="SELECT * FRO..user..." />
+            <marker date="1452238514018" expanded="true" signature="1716:1759" placeholder="SELECT * FRO..." />
+            <marker date="1452238514018" expanded="true" signature="2780:2802" placeholder="SELECT * FRO..moniteur..." />
+            <marker date="1452238514018" expanded="true" signature="2961:2980" placeholder="SELECT * FRO..eleve..." />
+            <marker date="1452238514018" expanded="true" signature="3237:3331" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="3858:3981" placeholder="INSERT INTO ..." />
+            <marker date="1452238514018" expanded="true" signature="4279:4348" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="4546:4596" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="4546:4622" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="4819:4871" placeholder="SELECT preno..eleve..." />
+            <marker date="1452238514018" expanded="true" signature="5067:5118" placeholder="SELECT preno..moniteur..." />
           </folding>
         </state>
       </provider>
@@ -376,67 +426,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PPE/class/membre.class.php">
+    <entry file="file://$PROJECT_DIR$/PPE/vue/planning.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.849056">
-          <caret line="207" column="33" selection-start-line="207" selection-start-column="20" selection-end-line="207" selection-end-column="33" />
-          <folding>
-            <marker date="1452224532176" expanded="true" signature="420:461" placeholder="SELECT email..user..." />
-            <marker date="1452224532176" expanded="true" signature="787:948" placeholder="INSERT INTO ..." />
-            <marker date="1452224532176" expanded="true" signature="1402:1458" placeholder="SELECT * FRO..user..." />
-            <marker date="1452224532176" expanded="true" signature="1716:1759" placeholder="SELECT * FRO..." />
-            <marker date="1452224532176" expanded="true" signature="2780:2802" placeholder="SELECT * FRO..moniteur..." />
-            <marker date="1452224532176" expanded="true" signature="2961:2980" placeholder="SELECT * FRO..eleve..." />
-            <marker date="1452224532176" expanded="true" signature="3237:3269" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="3237:3315" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="3237:3331" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="3858:3981" placeholder="INSERT INTO ..." />
-            <marker date="1452224532176" expanded="true" signature="4279:4322" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="4520:4570" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="4560:4570" placeholder="SELECT * FRO..planning..." />
-            <marker date="1452224532176" expanded="true" signature="4767:4819" placeholder="SELECT preno..eleve..." />
-            <marker date="1452224532176" expanded="true" signature="5015:5066" placeholder="SELECT preno..moniteur..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PPE/vue/entreeCours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4528303">
-          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <marker date="1452221265191" expanded="true" signature="570:906" placeholder="..." />
-            <marker date="1452221265191" expanded="true" signature="809:906" placeholder="..." />
-            <marker date="1452221265191" expanded="true" signature="1255:1474" placeholder="..." />
-            <marker date="1452221265191" expanded="true" signature="1340:1474" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-26.807692">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PPE/vue/form_connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
+        <state vertical-scroll-proportion="-7.9615383">
           <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PPE/espace-perso.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-55.576923">
-          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.3461537">
+          <caret line="48" column="69" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PPE/vue/planning.php">
+    <entry file="file://$PROJECT_DIR$/PPE/vue/entreeCours.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8011494">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PPE/class/membre.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4827586">
+          <caret line="201" column="112" selection-start-line="201" selection-start-column="112" selection-end-line="201" selection-end-column="112" />
+          <folding>
+            <marker date="1452238514018" expanded="true" signature="420:461" placeholder="SELECT email..user..." />
+            <marker date="1452238514018" expanded="true" signature="787:948" placeholder="INSERT INTO ..." />
+            <marker date="1452238514018" expanded="true" signature="1402:1458" placeholder="SELECT * FRO..user..." />
+            <marker date="1452238514018" expanded="true" signature="1716:1759" placeholder="SELECT * FRO..." />
+            <marker date="1452238514018" expanded="true" signature="2780:2802" placeholder="SELECT * FRO..moniteur..." />
+            <marker date="1452238514018" expanded="true" signature="2961:2980" placeholder="SELECT * FRO..eleve..." />
+            <marker date="1452238514018" expanded="true" signature="3237:3331" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="3858:3981" placeholder="INSERT INTO ..." />
+            <marker date="1452238514018" expanded="true" signature="4279:4348" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="4546:4596" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="4546:4622" placeholder="SELECT * FRO..planning..." />
+            <marker date="1452238514018" expanded="true" signature="4819:4871" placeholder="SELECT preno..eleve..." />
+            <marker date="1452238514018" expanded="true" signature="5067:5118" placeholder="SELECT preno..moniteur..." />
+          </folding>
         </state>
       </provider>
     </entry>
