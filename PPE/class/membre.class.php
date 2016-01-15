@@ -25,13 +25,18 @@ class Membre
 		$req = $this->bdd->prepare("SELECT email FROM user WHERE email=:email");
 		$req->execute(array("email" => $email));
 		$doublemail = $req->fetch()[0];
+
+		if(strlen($password)<7)
+		{
+			echo "<p class=\"alert alert-warning\">Votre mot de passe doit faire un minimum de 8 caractère.</p>";
+		}
 		
 		if(strtolower($doublemail)==strtolower($email))
 		{
-			echo("L'email est déjà utilisé, il ce peut que vous soyez déjà inscrit sur notre site.\n");
+			echo("<p class=\"alert alert-warning\">L'email est déjà utilisé, il ce peut que vous soyez déjà inscrit sur notre site.</p>");
 		}
 		
-		if(!$doublemail)
+		if(!$doublemail && strlen($password)>7)
 		{
 			$password = sha1($password);
 			$req = $this->bdd->prepare("INSERT INTO eleve(email, password, date_insc, nom, prenom, date_naiss, coordonnee) 
@@ -43,7 +48,7 @@ class Membre
 				"prenom" => $prenom,
 				"date_naiss" => $date_naiss,
 				"coordonnee" => $adresse));
-			echo("Félicitation vous etes maintenant inscrit sur notre site web.");
+			echo("<p class=\"alert alert-success\">Félicitation vous etes maintenant inscrit sur notre site web.</p>");
 			echo"<br/><br/>";
 			echo"<meta http-equiv=\"Refresh\" content=\"2\">";
 		}
