@@ -26,16 +26,16 @@ class Membre
 		$req->execute(array("email" => $email));
 		$doublemail = $req->fetch()[0];
 
-		if(strlen($password)<7)
+		if(strlen($password)<=7)
 		{
 			echo "<p class=\"alert alert-warning\">Votre mot de passe doit faire un minimum de 8 caractère.</p>";
 		}
-		
+
 		if(strtolower($doublemail)==strtolower($email))
 		{
 			echo("<p class=\"alert alert-warning\">L'email est déjà utilisé, il ce peut que vous soyez déjà inscrit sur notre site.</p>");
 		}
-		
+
 		if(!$doublemail && strlen($password)>7)
 		{
 			$password = sha1($password);

@@ -2,3 +2,5 @@ Faire un control du champ email
 Vérifier le mot de passe
 Refaire le planning
 Ajouter le champ nbEleve a la table Moniteur
+
+Faire un system de niveau sur les leçons.
