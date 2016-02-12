@@ -187,7 +187,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <h1>Contactez nous</h1>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p>Pour plus d'informations sur l'une de nos offres laissez un message et nous vous répondrons dès que possible. Vous pouvez laisser votre numéro à la fin de votre message et nous vous contacterons directement si vous le souhaitez</p>
                         <div class="status alert alert-success" style="display: none"></div>
                         <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
                             <div class="row">
