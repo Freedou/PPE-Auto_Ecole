@@ -75,7 +75,8 @@
             <div class="box first">
                 <div class="center">
                     <h2>Qui sommes nous ?</h2>
-                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <p class="lead">Auto-école moderne avec une équipe de moniteurs professionnels jeunes, dynamiques et à l'écoute.
+                    Tout pour réussir votre permis.</p>
                 </div>
             </div><!--/.box-->
         </div><!--/.container-->
