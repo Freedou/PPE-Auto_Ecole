@@ -194,12 +194,12 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Nom">
+                                        <input name="name" type="text" class="form-control" required="required" placeholder="Nom">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Adresse Email">
+                                        <input name="email" type="text" class="form-control" required="required" placeholder="Adresse Email">
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +209,7 @@
                                         <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-danger btn-lg">Envoyer</button>
+                                        <button type="submit" name="sendticket" class="btn btn-danger btn-lg">Envoyer</button>
                                     </div>
                                 </div>
                             </div>

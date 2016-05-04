@@ -53,6 +53,71 @@ class Membre
 			echo"<meta http-equiv=\"Refresh\" content=\"2\">";
 		}
 	}
+
+	public function inscriptionMono($email, $password, $nom, $prenom, $qualification)
+	{
+		$req = $this->bdd->prepare("SELECT email FROM user WHERE email=:email");
+		$req->execute(array("email" => $email));
+		$doublemail = $req->fetch()[0];
+
+		if(strlen($password)<=7)
+		{
+			echo "<p class=\"alert alert-warning\">Votre mot de passe doit faire un minimum de 8 caractère.</p>";
+		}
+
+		if(strtolower($doublemail)==strtolower($email))
+		{
+			echo("<p class=\"alert alert-warning\">L'email est déjà utilisé, il ce peut que vous soyez déjà inscrit sur notre site.</p>");
+		}
+
+		if(!$doublemail && strlen($password)>7)
+		{
+			$password = sha1($password);
+			$req = $this->bdd->prepare("INSERT INTO moniteur(email, password, nom, prenom, qualification)
+				VALUES(:email, :pass, :nom, :prenom, :qualification)");
+			$req->execute(array(
+				"pass" => $password,
+				"email" => $email,
+				"nom" => $nom,
+				"prenom" => $prenom,
+				"qualification" => $qualification));
+			echo("<p class=\"alert alert-success\">Le moniteur a correctement été inscrit.</p>");
+			echo"<br/><br/>";
+		}
+	}
+
+	public function inscriptionGest($email, $password, $nom, $prenom)
+	{
+		$req = $this->bdd->prepare("SELECT email FROM user WHERE email=:email");
+		$req->execute(array("email" => $email));
+		$doublemail = $req->fetch()[0];
+
+		if(strlen($password)<=7)
+		{
+			echo "<p class=\"alert alert-warning\">Votre mot de passe doit faire un minimum de 8 caractère.</p>";
+		}
+
+		if(strtolower($doublemail)==strtolower($email))
+		{
+			echo("<p class=\"alert alert-warning\">L'email est déjà utilisé, il ce peut que vous soyez déjà inscrit sur notre site.</p>");
+		}
+
+		if(!$doublemail && strlen($password)>7)
+		{
+			$password = sha1($password);
+			$req = $this->bdd->prepare("INSERT INTO gestionnaire(email, password, nom, prenom)
+				VALUES(:email, :pass, :nom, :prenom)");
+			$req->execute(array(
+				"pass" => $password,
+				"email" => $email,
+				"nom" => $nom,
+				"prenom" => $prenom));
+			echo("<p class=\"alert alert-success\">Le gestionnaire a été correctement inscrit.</p>");
+			echo"<br/><br/>";
+		}
+	}
+
+
 	
 	public function connection($email, $password)
 	{
@@ -174,7 +239,7 @@ class Membre
 					if ($values == substr($coursnondispo['date_heure_debut'], -8, 2))
 					{
 						unset($cours[$key]);
-						$cours = array_values($cours);
+						//$cours = array_values($cours);
 					}
 				}
 			}
@@ -204,7 +269,7 @@ class Membre
 
 	public function afficherMesLesson($moniteur)
 	{
-		$req = $this->bdd->prepare("SELECT * FROM planning WHERE id_moniteur=:moniteur ORDER BY date_heure_debut");
+		$req = $this->bdd->prepare("SELECT * FROM planning WHERE id_moniteur=:moniteur AND date_heure_debut>=SYSDATE()-60480000 ORDER BY date_heure_debut");
 		$req->execute(array("moniteur" => $moniteur));
 		$resultat = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $resultat;
@@ -223,6 +288,46 @@ class Membre
 		$req = $this->bdd->prepare("SELECT prenom FROM moniteur WHERE id_user=:moniteur");
 		$req->execute(array("moniteur" => $moniteur));
 		$resultat = $req->fetch(PDO::FETCH_ASSOC);
+		return $resultat;
+	}
+
+	public function changeState($state, $date)
+	{
+		$req = $this->bdd->prepare("UPDATE planning SET etat=:etat WHERE date_heure_debut=:dates");
+		$req->execute(array("etat" => $state, "dates" => $date));
+		$resultat = $req->fetch(PDO::FETCH_ASSOC);
+		return $resultat;
+	}
+
+	public function cancelCours($eleve, $date)
+	{
+		$req = $this->bdd->prepare("DELETE FROM planning WHERE date_heure_debut=:dates AND id_user=:eleve");
+		$req->execute(array("dates" => $date, "eleve" => $eleve));
+		$resultat = $req->fetch(PDO::FETCH_ASSOC);
+		return $resultat;
+	}
+
+	public function afficherMesLessonOrderDate($date)
+	{
+		$req = $this->bdd->prepare("SELECT * FROM planning WHERE date_heure_debut>=:dates AND date_heure_debut<date_add(:dates, INTERVAL 1 DAY) ORDER BY date_heure_debut");
+		$req->execute(array("dates" => $date));
+		$resultat = $req->fetchAll(PDO::FETCH_ASSOC);
+		return $resultat;
+	}
+
+	public function afficherTicket()
+	{
+		$req = $this->bdd->prepare("SELECT * FROM ticket WHERE etat=0 ORDER BY dates");
+		$req->execute();
+		$resultat = $req->fetchAll(PDO::FETCH_ASSOC);
+		return $resultat;
+	}
+
+	public function validerTicket($id)
+	{
+		$req = $this->bdd->prepare("UPDATE ticket SET etat=1 WHERE idT=:id");
+		$req->execute(array("id" => $id));
+		$resultat = $req->fetchAll(PDO::FETCH_ASSOC);
 		return $resultat;
 	}
 }

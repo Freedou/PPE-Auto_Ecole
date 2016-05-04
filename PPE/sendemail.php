@@ -1,21 +1,21 @@
 <?php
-	header('Content-type: application/json');
-	$status = array(
-		'type'=>'success',
-		'message'=>'Email sent!'
-	);
+if(isset($_POST["sendticket"])) {
 
-    $name = @trim(stripslashes($_POST['name'])); 
-    $email = @trim(stripslashes($_POST['email'])); 
-    $subject = @trim(stripslashes($_POST['subject'])); 
-    $message = @trim(stripslashes($_POST['message'])); 
 
-    $email_from = $email;
-    $email_to = 'joffray.billon@gmail.com';
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-    $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
 
-    $success = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
+    $body = "Name: " . $name . "</br></br>" . "Email: " . $email . "</br></br>" . "Message: " . $message;
 
-    echo json_encode($status);
-    die; 
+    $bdd = new PDO("mysql:host=localhost;dbname=auto_ecole", "root", "");
+    $req = $bdd->prepare("INSERT INTO ticket(message, dates, etat) VALUES (:message, sysdate(), 0)");
+    $req->execute(array("message" => $body));
+    $resultat = $req->fetch(PDO::FETCH_ASSOC);
+}
+?>
+<script>
+    alert("Ticket envoyer!");
+</script>
+<meta http-equiv="Refresh" content="0;URL=index.php">
