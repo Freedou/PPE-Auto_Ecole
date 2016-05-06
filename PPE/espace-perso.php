@@ -59,6 +59,7 @@
 
                                 case '3': //gestionnaire
                                     ?>
+                                    <li><a href="espace-perso.php">Ticket</a></li>
                                     <li><a href="?gest=eleve"">Gestion des élèves</a></li>
                                     <li><a href="?gest=mono">Inscrire un moniteur</a></li>
                                     <li><a href="?gest=gest">Inscrire un gestionnaire</a></li>
