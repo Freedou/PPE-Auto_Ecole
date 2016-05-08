@@ -54,7 +54,7 @@ DROP TRIGGER IF EXISTS `addEleve`;
 DELIMITER //
 CREATE TRIGGER `addEleve` BEFORE INSERT ON `eleve`
  FOR EACH ROW BEGIN
-INSERT INTO user (id_user, email, password, nom, prenom) VALUES (new.id_user, new.email, new.password, new.nom, new.prenom);
+INSERT INTO user (email, password, nom, prenom) VALUES (new.email, new.password, new.nom, new.prenom);
 END
 //
 DELIMITER ;
@@ -62,7 +62,7 @@ DROP TRIGGER IF EXISTS `deleteEleve`;
 DELIMITER //
 CREATE TRIGGER `deleteEleve` BEFORE DELETE ON `eleve`
  FOR EACH ROW BEGIN
-DELETE FROM user WHERE eleve=old.id_user;
+DELETE FROM user WHERE email=old.email;
 END
 //
 DELIMITER ;
@@ -70,7 +70,7 @@ DROP TRIGGER IF EXISTS `updateEleve`;
 DELIMITER //
 CREATE TRIGGER `updateEleve` BEFORE UPDATE ON `eleve`
  FOR EACH ROW BEGIN
-UPDATE user SET id_user=new.id_user, email=new.email, password=new.password, nom=new.nom, prenom=new.prenom WHERE id_user=new.id_user;
+UPDATE user SET id_user=new.id_user, email=new.email, password=new.password, nom=new.nom, prenom=new.prenom WHERE email=new.email;
 END
 //
 DELIMITER ;
@@ -105,7 +105,7 @@ DROP TRIGGER IF EXISTS `addGestionnaire`;
 DELIMITER //
 CREATE TRIGGER `addGestionnaire` BEFORE INSERT ON `gestionnaire`
  FOR EACH ROW BEGIN
-INSERT INTO user (id_user, email, password, nom, prenom) VALUES (new.id_user, new.email, new.password, new.nom, new.prenom);
+INSERT INTO user (email, password, nom, prenom) VALUES (new.email, new.password, new.nom, new.prenom);
 END
 //
 DELIMITER ;
@@ -113,7 +113,7 @@ DROP TRIGGER IF EXISTS `deleteGestionnaire`;
 DELIMITER //
 CREATE TRIGGER `deleteGestionnaire` BEFORE DELETE ON `gestionnaire`
  FOR EACH ROW BEGIN
-DELETE FROM user WHERE id_user=old.id_user;
+DELETE FROM user WHERE email=old.email;
 END
 //
 DELIMITER ;
@@ -121,7 +121,7 @@ DROP TRIGGER IF EXISTS `updateGestionnaire`;
 DELIMITER //
 CREATE TRIGGER `updateGestionnaire` BEFORE UPDATE ON `gestionnaire`
  FOR EACH ROW BEGIN
-UPDATE user SET id_user=new.id_user, email=new.email, password=new.password, nom=new.nom, prenom=new.prenom WHERE id_user=new.id_user;
+UPDATE user SET id_user=new.id_user, email=new.email, password=new.password, nom=new.nom, prenom=new.prenom WHERE email=new.email;
 END
 //
 DELIMITER ;
@@ -157,7 +157,7 @@ DROP TRIGGER IF EXISTS `addMoniteur`;
 DELIMITER //
 CREATE TRIGGER `addMoniteur` BEFORE INSERT ON `moniteur`
  FOR EACH ROW BEGIN
-INSERT INTO user (id_user, email, password, nom, prenom) VALUES (new.id_user, new.email, new.password, new.nom, new.prenom);
+INSERT INTO user (email, password, nom, prenom) VALUES (new.email, new.password, new.nom, new.prenom);
 END
 //
 DELIMITER ;
@@ -165,7 +165,7 @@ DROP TRIGGER IF EXISTS `deleteMoniteur`;
 DELIMITER //
 CREATE TRIGGER `deleteMoniteur` BEFORE DELETE ON `moniteur`
  FOR EACH ROW BEGIN
-DELETE FROM user WHERE eleve=old.id_user;
+DELETE FROM user WHERE email=old.email;
 END
 //
 DELIMITER ;
@@ -173,7 +173,7 @@ DROP TRIGGER IF EXISTS `updateMoniteur`;
 DELIMITER //
 CREATE TRIGGER `updateMoniteur` BEFORE UPDATE ON `moniteur`
  FOR EACH ROW BEGIN
-UPDATE user SET id_user=new.id_user, email=new.email, password=new.password, nom=new.nom, prenom=new.prenom WHERE id_user=new.id_user;
+UPDATE user SET id_user=new.id_user, email=new.email, password=new.password, nom=new.nom, prenom=new.prenom WHERE email=new.email;
 END
 //
 DELIMITER ;
